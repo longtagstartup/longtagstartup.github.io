@@ -1,0 +1,19 @@
+<div class="android-card-container mdl-grid" ng-controller="produtoCtrl">
+<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp" ng-repeat="produto in produtos">
+  <div class="mdl-card__media">
+    <a href="{{produto.img}}" rel="shadowbox"><img src="{{produto.img}}"></a>
+  </div>
+  <div class="mdl-card__title">
+     <h4 class="mdl-card__title-text">{{produto.nome}}</h4>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <span class="mdl-typography--font-light mdl-typography--subhead">{{produto.desc}}</span>
+  </div>
+  <div class="mdl-card__actions">
+     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase btnGetProdut" href="">
+        Obter produto 
+       <!--<i class="material-icons">chevron_right</i>-->
+     </a>
+  </div>
+</div>
+</div>

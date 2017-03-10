@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Longtag -  Desenvolvimentos</title>
+    <link rel="shortout icon" type="image/x-icon" href="images/logo.ico">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/devicons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" href="lib/shadowBox/shadowbox.css">
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall" style="box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3)">
+      <div class="mdl-layout__drawer-button menuHumburger">
+          <i class="material-icons">menu</i>
+      </div>
+        <div class="mdl-layout__header-row">
+          <span class="logo"><img src="images/logo.png" alt="logotipo"></span><span class="mdl-layout-title"></span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase menuLink" href="#/">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase " id="more-button">Soluções</a>
+              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-left mdl-js-ripple-effect sub-menu" for="more-button">
+                <li class="mdl-menu__item"><a href="#/#oquefazemos" class="menuLink">O que fazemos</a></li>
+                <li class="mdl-menu__item"><a href="#/#comofazemos" class="menuLink">Como Fazemos</a></li>
+                <li class="mdl-menu__item"><a href="#/#porquenos" class="menuLink">Porque nós</a></li>
+              </ul>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase menuLink" href="#/sobrenos">Sobre nós</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase menuLink" href="#/#equipa">Nossa Equipa</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase menuLink" href="#/produtos">produtos</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase menuLink" href="#/#contacto">Contactos</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image logom" src="images/logo.png">
+          </span>
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/longtagVectoIIr.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Home</a>
+          <div class="android-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="">O que Fazemos</a>
+          <a class="mdl-navigation__link" href="">Como Fazemos</a>
+          <a class="mdl-navigation__link" href="">Porque nós</a>
+          <div class="android-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="">Nossa Equipa</a>
+          <div class="android-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <div ng-view></div>
+      </div>
+
+
+    </div>
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/mui.js"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script src="js/material.js"></script>
+    <script src="lib/shadowBox/shadowbox.js"></script>
+  
+
+  </body>
+</html>
